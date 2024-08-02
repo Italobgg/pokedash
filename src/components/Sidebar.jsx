@@ -1,21 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => (
-  <nav className="bg-dark sidebar ">
-    <Nav className="flex-column p-3">
-      <Nav.Link as={NavLink} to="/" end>
-        Home
-      </Nav.Link>
-      <Nav.Link as={NavLink} to="/pokemons">
-        Pokémons
-      </Nav.Link>
-      <Nav.Link as={NavLink} to="/about">
-        Sobre
-      </Nav.Link>
+  <div className="bg-light border-right" style={{ width: '250px' }}>
+    <Nav className="flex-column">
+      <Nav.Link as={Link} to="/">Home</Nav.Link>
+      <Nav.Link as={Link} to="/pokemons">Pokémons</Nav.Link>
+      <Nav.Link as={Link} to="/about">About</Nav.Link>
     </Nav>
-  </nav>
+  </div>
 );
 
 export default Sidebar;

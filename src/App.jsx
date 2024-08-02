@@ -12,13 +12,13 @@ const App = () => (
     <AppNavbar />
     <div className="d-flex">
       <Sidebar />
-      <main className="flex-grow-1 p-3">
+      <div className="content flex-grow-1 p-3">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pokemons" element={<Pokemons />} />
           <Route path="/about" element={<About />} />
         </Routes>
-      </main>
+      </div>
     </div>
   </Router>
 );
