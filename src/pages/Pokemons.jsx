@@ -82,8 +82,7 @@ const Pokemons = () => {
     <Container>
       <h1 className="my-4">Pokémons</h1>
       <Form.Group controlId="search">
-        <Form.Label>Pesquisar Pokémon</Form.Label>
-        <Form.Control
+        <Form.Control className='my-2'
           type="text"
           placeholder="Digite o nome do Pokémon"
           value={searchTerm}
@@ -96,7 +95,7 @@ const Pokemons = () => {
         <>
           <Row>
             {searchTerm ? (
-              filteredPokemons.slice(0, 10).map(pokemon => (
+              filteredPokemons.slice(0, 9).map(pokemon => (
                 <Col key={pokemon.name} md={4} className="mb-3">
                   <Card>
                     <Card.Img variant="top" src={pokemon.image} />

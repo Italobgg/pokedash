@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AppNavbar from "./components/Navbar";
+/* import AppNavbar from "./components/Navbar";*/
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import Pokemons from "./pages/Pokemons";
@@ -9,8 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => (
   <Router>
-    <AppNavbar />
-    <div className="d-flex">
+{/*     <AppNavbar />
+ */}    <div className="d-flex">
       <Sidebar />
       <div className="content flex-grow-1 p-3">
         <Routes>
